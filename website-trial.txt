@@ -1,0 +1,278 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Lalela-Theme</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <style>
+
+    body{
+      color: grey;
+    }
+    #header{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-image: url("images/danny-howe.jpg");
+      background-size: 100% 100%;
+      height: 60%;
+      background-color: rgb(180, 180, 180);
+    }
+
+    #leftside-header-column{
+      flex: 40%;
+      /*background-color: white;
+      border: 1px solid black;*/
+      padding: 10px;
+    }
+
+    #rightside-header-column{
+      flex: 50%;
+    /*  background-color: white;
+      border: 1px solid white;*/
+      padding: 10px;
+    }
+    #nav-buttons{
+      font-size: 25px;
+      color: white;
+      display: inline-block;
+      float: right;
+      margin-right: 2%;
+      text-decoration: none;
+    }
+    #logo{
+      padding: 10px;
+      background-color: green;
+      width: 20px;
+      height: 20px;
+    }
+
+    #header h1{
+      text-align: center;
+      flex: 100%;
+      color: white;
+      margin-top: 250px;
+      font-size: 50px;
+    }
+
+    #wrapper{
+      margin-left: 10%;
+      margin-right: 10%;
+
+    }
+
+    .main-categories{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .main-categories h1, hr{
+      flex: 100%;
+      text-align: center;
+    }
+    #about-image-holder{
+      flex: 39.4%;
+      /*border: 1px solid black;*/
+      margin-left: 20px;
+      padding-left: 10px;
+      /*padding-right: 10px;*/
+      padding-top: 20px;
+    }
+    #about-image-holder_2{
+      flex: 12.2%;
+      /*border: 1px solid black;
+      padding-left: 10px;*/
+      padding-right: 10px;
+      padding-top: 20px;
+    }
+
+    #about-text-holder{
+      flex: 40%;
+      /*border: 1px solid black;*/
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 20px;
+    /*  border-bottom: 4px solid orange;*/
+    }
+
+    #events-image-holder{
+      flex: 45%;
+      /*border: 1px solid black;*/
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 20px;
+    }
+
+    #events-text-holder{
+      flex: 45%;
+      /*border: 1px solid black;*/
+      padding-left: 20px;
+      padding-right: 10px;
+      /*padding-top: 20px;*/
+      /*border-bottom: 1px solid black;*/
+    }
+
+    #gallery-column{
+      flex: 20%;
+      /*border: 1px solid black;*/
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 20px;
+    }
+
+    #gallery-column img{
+      padding-bottom: 10px;
+    }
+    hr{
+      border: 1px solid grey;
+
+    }
+    footer{
+      padding: 10px;
+      background-color: orange;
+    }
+    .fab{
+      font-size: 30px;
+      margin-right: 15px;
+      color: white;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .main-heading{
+      font-size: 50px;
+      color: orange;
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div id="leftside-header-column">
+      <div id="logo"><img></div>
+    </div>
+    <div id="rightside-header-column">
+      <a id="nav-buttons" href="#">Events</a>
+      <a id="nav-buttons" href="#">Gallery</a>
+      <a id="nav-buttons"  href="#">Contact</a>
+      <a id="nav-buttons"  href="#"> About</a>
+    </div>
+    <h1>This Event Happening Soon!</h1>
+  </div>
+
+  <div id="wrapper">
+    <div class="main-categories" >
+
+      <h1 class="main-heading">Events</h1>
+      <hr>
+
+      <div id="events-image-holder">
+        <img src="images/nainoa-shizuru.jpg" width="100%" alt="">
+      </div>
+
+      <div id="events-text-holder">
+        <h2>The Dustmites Unpluged</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Ut et tempus dui. Curabitur quis leo eu justo tincidunt eleifend at et ex.
+          Duis porttitor tortor porta egestas eleifend.
+          Sed lectus lorem, bibendum ac finibus ut, hendrerit eu nibh.
+          Duis porttitor tortor porta egestas eleifend.
+          Sed lectus lorem, bibendum ac finibus ut, hendrerit eu nibh.
+          Curabitur non velit ac mi placerat malesuada vel eu ante.
+          <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Ut et tempus dui. Curabitur quis leo eu justo tincidunt eleifend at et ex.
+          Aenean ut orci rutrum, maximus felis eget, pulvinar lorem.
+          Nam sit amet efficitur enim.
+          Morbi lacus eros, posuere vitae ipsum eu, consequat condimentum nulla.
+          Duis porttitor tortor porta egestas eleifend.
+          Sed lectus lorem, bibendum ac finibus ut, hendrerit eu nibh.
+        </p>
+
+        <button type="button" name="button">Learn more</button>
+
+      </div>
+    </div>
+
+    <div class="main-categories" >
+
+      <h1 class="main-heading">Gallery</h1>
+      <hr>
+
+      <div id="gallery-column">
+        <img src="images/hello-i-m-nik.jpg" width="100%" alt="">
+      </div>
+
+      <div id="gallery-column">
+        <img src="images/ahmed-rizkhaan.jpg" width="100%" alt="">
+        <img src="images/dan-gold.jpg" width="100%" alt="">
+      </div>
+
+      <div id="gallery-column">
+        <img src="images/clem-onojeghuo.jpg"width="100%" alt="">
+          <img src="images/bill-hamway.jpg"width="100%" alt="">
+      </div>
+
+      <div id="gallery-column">
+        <img src="images/sorin-sirbu.jpg" width="100%" alt="">
+      </div>
+
+    </div>
+
+    <div class="main-categories" >
+
+      <h1 class="main-heading">About me</h1>
+      <hr>
+
+      <div id="about-text-holder">
+        <h1>My Name</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Ut et tempus dui. Curabitur quis leo eu justo tincidunt eleifend at et ex.
+          Duis porttitor tortor porta egestas eleifend.
+          <br><br>
+          Sed lectus lorem, bibendum ac finibus ut, hendrerit eu nibh.
+          Curabitur non velit ac mi placerat malesuada vel eu ante.
+          Aenean ut orci rutrum, maximus felis eget, pulvinar lorem.
+          <br><br>
+          Nam sit amet efficitur enim.
+          Morbi lacus eros, posuere vitae ipsum eu, consequat condimentum nulla.
+          <br><br>
+          Sed lectus lorem, bibendum ac finibus ut, hendrerit eu nibh.
+          Curabitur non velit ac mi placerat malesuada vel eu ante.
+          Aenean ut orci rutrum, maximus felis eget, pulvinar lorem.
+
+
+
+        </p>
+      </div>
+
+      <div id="about-image-holder">
+        <img src="images/xolani-main.jpg" width="100%" alt="">
+      </div>
+      <div id="about-image-holder_2">
+        <img src="images/xolani-secondary_1.jpg" width="100%" alt="">
+        <img src="images/xolani-secondary_2.jpg" width="100%" alt="">
+        <img src="images/xolani-secondary_3.jpg" width="100%" alt="">
+      </div>
+      <div id="about-image-holder_2">
+
+      </div>
+
+
+    </div>
+
+  </div>
+<footer>
+
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-twitter"></i>
+
+
+</footer>
+</body>
+</html>
