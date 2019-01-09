@@ -4,60 +4,77 @@
 
 :root{
   --theme-color:#04b993;
+  --header-text-color:white;
   --page-text-color:black;
   --page-title-color: #430f7c;
   --dash-n-line-color: rgb(230,230,230);
   --icons-color: white;
   --white-text-color: white;
+  --yellow-ci-color: #fff20d;
 
 }
 body{
   font-family: 'Montserrat', sans-serif;
-  color: grey;
+  color: black;
   color: var(--page-text-color);
   margin: 0;
   padding: 0;
 }
 #header{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  background-image: url("images/background-dry.jpg");
-  background-size: 100% 100%;
-  height: 60%;
+  color: var(--white-text-color);
+  /*padding: 10px;*/
+  background-image: url("images/background-dry-graphic-cropped.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 637px;
   margin-bottom: 40px;
+}
+
+.logo-n-navbar-container{
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  height: auto;
+  background-color: rgba(0,0,0,0.5);
+  border-top: 2px solid var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
 }
 
 /*Beginning of home page section*/
 
 #leftside-header-column{
-  flex: 40%;
+  float: left;
   padding: 10px;
+  width: auto;
+  /*background-color: red;*/
 }
 
 #rightside-header-column{
-  flex: 50%;
-  padding: 10px;
+  float: right;
+  padding-top: 3vh;
+  /*background-color: red;*/
+  width: auto;
 }
 #nav-buttons{
   font-size: 25px;
   color: white;
   color: var(--white-text-color)
-  display: inline-block;
   float: right;
-  margin-right: 2%;
+  margin-right: 1vw;
   text-decoration: none;
+  border-bottom: solid 1px var(--theme-color);
+  /*border-top: solid 1px var(--yellow-ci-color);*/
 }
 #logo{
-  width: 70px;
-  height: 70px;
+  width: 200px;
 }
 
 #header h1{
   text-align: center;
   flex: 100%;
   color: white;
-  color: var(--heading-page-text);
+  color: var(--white-text-color);
   margin-top: 250px;
   font-size: 50px;
 }
@@ -66,13 +83,18 @@ body{
   margin-left: 10%;
   margin-right: 10%;
 }
+
+#rightside-header-column #nav-buttons:hover {
+  border-bottom: solid 3px var(--yellow-ci-color);
+
+}
 /* Events section*/
 
 .main-events-container{
   display: flex;
-  border-left: 0.2vw solid orange;
+  border-left: 0.2vw solid #04b993;
   border-left: 0.2vw solid var(--theme-color);
-  border-right: 0.2vw solid orange;
+  border-right: 0.2vw solid #04b993;
   border-right: 0.2vw solid var(--theme-color);
   padding-left: 2vw;
   padding-right: 2vw;
@@ -118,7 +140,7 @@ body{
 }
 
 .main-categories button{
-  background-color: orange;
+  background-color: #04b993;
   background-color: var(--theme-color);
   border: none;
   padding: 6px 10px;
@@ -139,6 +161,11 @@ body{
 }
 
 /*About me section*/
+.about-main-categories{
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
 .about-me-container{
   margin-top: 40px;
   display: flex;
@@ -156,7 +183,7 @@ body{
   flex:45%;
   padding-left: 0.6vw;
   padding-right: 0.6vw;
-  border-left: 0.1vw solid orange;
+  border-left: 0.1vw solid #04b993;
   border-left: 0.1vw solid var(--theme-color);
 }
 
@@ -213,7 +240,7 @@ hr{
   color: var(--page-title-color);
   margin-left: 40%;
   margin-right: 40%;
-  border-bottom: 5px dotted orange;
+  border-bottom: 5px dotted #04b993;
   border-bottom: 5px dotted var(--theme-color);
 }
 
@@ -236,7 +263,9 @@ hr{
 #about-div{
     padding-left: 10vw;
     padding-right: 10vw;
+    border-left: 0.2vw solid #04b993;
     border-left: 0.2vw solid var(--theme-color);
+    border-right: 0.2vw solid #04b993;
     border-right: 0.2vw solid var(--theme-color);
     margin-bottom: 50px;
   }
@@ -247,18 +276,18 @@ hr{
 }
 
 .main-section-title-container {
-  border-bottom:1px solid #33b5e5;
+  border-bottom:1px solid #04b993;
   border-bottom:1px solid var(--theme-color);
   margin-bottom: 20px;
 }
 
 .skillsbar-container{
-  border: 1px solid #33b5e5;
+  border: 1px solid #04b993;
   border: 1px solid var(--theme-color);
 }
 
 .skillsbar{
-  background-color: #33b5e5;
+  background-color: #04b993;
   background-color: var(--theme-color);
   padding: 10px;
   color: white;
@@ -308,6 +337,7 @@ hr{
 .side-heading{
   color: var(--page-title-color);
   text-align: center;
+  background-color: #04b993;
   background-color: var(--theme-color);
   margin-left: 1vw;
   margin-right: 1vw;
@@ -318,6 +348,7 @@ hr{
   width: 45%;
   margin-right: 2vw;
   /*border-left: 0.2vw solid var(--theme-color);*/
+  background-color: ;
   background-color: var(--dash-n-line-color) /*#fff20d*/;
   display: inline-block;
   margin-bottom: 2vw;
@@ -334,7 +365,7 @@ hr{
 #message-form{
     flex: 100%;
     padding: 10px;
-    border: 1px solid #33b5e5;
+    border: 1px solid #04b993;
     border: 1px solid var(--theme-color);
     margin-top: 50px;
     margin-bottom: 30px;
@@ -359,7 +390,9 @@ hr{
 #contact-div{
   padding-left: 10vw;
   padding-right: 10vw;
+  border-left: 0.2vw solid #04b993;
   border-left: 0.2vw solid var(--theme-color);
+  border-right: 0.2vw solid #04b993;
   border-right: 0.2vw solid var(--theme-color);
   margin-bottom: 100px;
 }
@@ -380,7 +413,7 @@ input[type=text], textarea{
 
 footer{
   padding: 10px;
-  background-color: orange;
+  background-color: #04b993;
   background-color: var(--theme-color);
 
 }
